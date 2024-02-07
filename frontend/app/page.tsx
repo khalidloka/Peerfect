@@ -12,6 +12,7 @@ import HeroSection from "@/components/Home/HeroSection";
 import Partners from "@/components/Home/Partners";
 import CoursPopulaire from "@/components/Home/CoursPopulaire";
 import JeSuisUnCentre from "@/components/Home/JeSuisUnCentre";
+import Events from "@/components/Home/Events";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <Partners/>
       <CoursPopulaire/>
       <JeSuisUnCentre/>
+      <Events/>
     </>
   );
 }
