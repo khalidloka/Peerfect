@@ -3,6 +3,8 @@ import Image from "next/image";
 import Image1 from "../../public/photo 1.png";
 import Image2 from "../../public/photo2.png";
 import Image3 from "../../public/photo3.png";
+import Image4 from "../../public/image4.jpeg";
+import Image5 from "../../public/image5.jpeg";
 import Image6 from "../../public/image6.png";
 
 export default function page() {
@@ -44,6 +46,32 @@ export default function page() {
         </div>
       </div>
       {/* second section */}
+      <div className="flex gap-x-8 mt-20">
+      <div className="flex w-48  basis-1/2">
+          <Image
+            src={Image4}
+            alt="Photo de la fondatrice"
+            className="pt-12"
+          ></Image>
+          <Image
+            src={Image5}
+            alt="Photo de la fondatrice"
+            className="pb-12"
+          ></Image>
+         
+        </div>
+
+        <div className="flex flex-col justify-center basis-1/2 p-16">
+          <h1 className="text-4xl text-blue-800 font-bold	">
+            Notre mission {" "}
+          </h1>
+          <p className="pt-4 text-lg">
+          Favoriser la synergie humaine via un apprentissage collaboratif de qualité et développer les compétences techniques et professionnelles des apprenants, en les préparant à des carrières spécifiques et en favorisant l'acquisition de compétences recherchées sur le marché du travail.
+          </p>
+        </div>
+        
+      </div>
+      {/* Third section section */}
       <div className="flex gap-x-8 mt-20">
         <div className="flex flex-col justify-center basis-1/2 p-16">
           <h1 className="text-4xl text-blue-800 font-bold	pb-12">
