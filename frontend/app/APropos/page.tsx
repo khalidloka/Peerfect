@@ -3,11 +3,12 @@ import Image from "next/image";
 import Image1 from "../../public/photo 1.png";
 import Image2 from "../../public/photo2.png";
 import Image3 from "../../public/photo3.png";
+import Image6 from "../../public/image6.png";
 
 export default function page() {
   return (
     <div className="bg-Apropo pt-12">
-      
+
       {/* first section */}
 
       <div className="flex gap-x-8  ">
@@ -43,8 +44,24 @@ export default function page() {
         </div>
       </div>
       {/* second section */}
-      <div>
+      <div className="flex gap-x-8 mt-20">
+        <div className="flex flex-col justify-center basis-1/2 p-16">
+          <h1 className="text-4xl text-blue-800 font-bold	pb-12">
+          Notre innovation pédaghogique{" "}
+          </h1>
+          <p className="pt-4 text-xl">
+          Adopter des méthodes d'enseignement novatrices et des technologies éducatives pour améliorer l'expérience d'apprentissage
+          </p>
+        </div>
+        <div className=" basis-1/2 rounded-s-3xl rounded-r-3xl bg-blue-800 pl-12 mr-12 ">
 
+          <Image
+            src={Image6}
+            alt="Photo de la fondatrice"
+            className=""
+          ></Image>
+        
+        </div>
       </div>
     </div>
   );
