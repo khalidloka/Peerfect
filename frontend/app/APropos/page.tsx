@@ -90,6 +90,38 @@ export default function page() {
           <Image src={Image6} alt="Photo de la fondatrice" className=""></Image>
         </div>
       </div>
+
+      {/* fourth section  */}
+
+      <div className="flex flex-col mt-44">
+        <div className="flex justify-center m-20">
+          <h1 className="text-4xl text-blue-800 font-bold	">
+          Rencontrez notre équipe{" "}
+          </h1>
+          
+        </div>
+        <div  className="flex flex-row items-start justify-between">
+          <div className="bg-neyon flex  h-96 shadow-md rounded-full ">
+          <Image src={Image6} alt="Photo de la fondatrice" className="content-center"></Image>
+        </div>
+        <div className="">
+          <Image src={Image6} alt="Photo de la fondatrice" className=""></Image>
+        </div>
+        <div className="">
+          <Image src={Image6} alt="Photo de la fondatrice" className=""></Image>
+        </div>
+        <div className="">
+          <Image src={Image6} alt="Photo de la fondatrice" className=""></Image>
+        </div>
+        <div className="">
+          <Image src={Image6} alt="Photo de la fondatrice" className=""></Image>
+        </div>
+        <div className="">
+          <Image src={Image6} alt="Photo de la fondatrice" className=""></Image>
+        </div>
+        </div>
+        
+      </div>
     </div>
   );
 }
