@@ -6,6 +6,12 @@ import Image3 from "../../public/photo3.png";
 import Image4 from "../../public/image4.jpeg";
 import Image5 from "../../public/image5.jpeg";
 import Image6 from "../../public/image6.png";
+import Cards from "./cards"
+
+
+
+
+
 
 export default function page() {
   return (
@@ -120,6 +126,26 @@ export default function page() {
           <Image src={Image6} alt="Photo de la fondatrice" className=""></Image>
         </div>
         </div>
+        
+      </div>
+
+      {/* Fifth section  */}
+      <div className="flex flex-col mt-44">
+        
+        <div  className="flex flex-row items-start justify-between">
+      
+        </div>
+        
+      </div>
+
+      {/* Sixth section  */}
+      <div className="flex flex-col bg-white mt-44">
+        <div className="flex justify-center m-20">
+          <h1 className="text-4xl text-blue-800 font-bold	">
+          Pourquoi 2peerfect?
+          </h1>
+        </div>
+     <Cards></Cards>
         
       </div>
     </div>
