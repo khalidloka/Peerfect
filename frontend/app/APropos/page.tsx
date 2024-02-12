@@ -7,6 +7,7 @@ import Image4 from "../../public/image4.jpeg";
 import Image5 from "../../public/image5.jpeg";
 import Image6 from "../../public/image6.png";
 import Cards from "./cards"
+import Marquee from "./marquee"
 
 
 
@@ -146,7 +147,12 @@ export default function page() {
           </h1>
         </div>
      <Cards></Cards>
-        
+      </div>
+
+      {/* Seventh section  */}
+
+      <div className="bg-white">
+       <Marquee></Marquee>
       </div>
     </div>
   );
