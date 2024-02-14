@@ -1,89 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Center from "../../public/center.png";
 
 export default function JeSuisCentre() {
-  const [formData, setFormData] = useState({
-    name: "",
-    city: "",
-    occupation: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you can handle form submission logic, such as sending the data to a server
-    console.log(formData);
-  };
+ 
   return (
     <>
-      <div>
-        <div className="">
-          <Image
+      <div className=" h-screen mb-20">
+          <Image className=" z-40 "
             src={Center}
-            alt="Background center"
-            style={{ width: "100%" }}
-            className=" bg-blend-darken opacity-50"
+            alt="background"
+       
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+            objectFit="cover"
           />
-          <div>
-            <h1>Pourquoi devenir un PARTENAIRE avec 2 peerfect?</h1>
+          <div className="absolute z-50 inset-0 flex items-center justify-center">
+          <h1 className="font-bold shadow-md bg-blue-800 text-center uppercase mt-56 text-white text-5xl">Pourquoi devenir un PARTENAIRE avec <br /> 2 peerfect?</h1>
+
           </div>
-        </div>
         <div>
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="city">City:</label>
-              <input
-                type="text"
-                id="city"
-                name="city"
-                value={formData.city}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="occupation">Function:</label>
-              <input
-                type="text"
-                id="occupation"
-                name="occupation"
-                value={formData.occupation}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-              ></textarea>
-            </div>
-            <div>
-              <label htmlFor="insertMessage">Insert Message:</label>
-              <input type="text" id="insertMessage" name="insertMessage" />
-            </div>
-            <button type="submit">Validate</button>
-          </form>
+
         </div>
       </div>
     </>
