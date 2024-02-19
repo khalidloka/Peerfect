@@ -1,31 +1,18 @@
 import React from "react";
-import Image from "next/image";
-import Center from "../../public/center.png";
+import Header from "./header";
+import Form from "./Form";
 
 export default function JeSuisCentre() {
- 
   return (
     <>
-      <div className=" h-screen mb-20">
-          <Image className=" z-40 "
-            src={Center}
-            alt="background"
-       
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-            objectFit="cover"
-          />
-          <div className="absolute z-50 inset-0 flex items-center justify-center">
-          <h1 className="font-bold shadow-md bg-blue-800 text-center uppercase mt-56 text-white text-5xl">Pourquoi devenir un PARTENAIRE avec <br /> 2 peerfect?</h1>
-
-          </div>
-        <div>
-
+      <div className="flex flex-col">
+        <div className="">
+          <Header></Header>
+        </div>
+        <div className="">
+          <Form></Form>
         </div>
       </div>
     </>
   );
 }
-export const useClient = true;
