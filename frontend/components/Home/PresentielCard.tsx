@@ -16,7 +16,7 @@ export default function PresentielCard() {
           priority
         />
         <Image
-          className="relative"
+          className="relative "
           src={vector6}
           alt=""
           width={560.039}

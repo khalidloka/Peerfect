@@ -30,7 +30,7 @@ export default function Footer() {
   ];
   return (
     <>
-      <div className="h-[388px] bg-black  mt-10">
+      <div className=" h-[388px] bg-black  mt-10 ">
         <div className="flex">
         <Link href="/">
           <Image className="text-white ml-10" src={Logo} alt="" priority />
