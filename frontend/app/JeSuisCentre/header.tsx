@@ -17,9 +17,12 @@ function header() {
           }}
           objectFit="cover"
         />
-        <div className="absolute z-50 inset-0 flex items-center justify-center">
+        <div className="absolute z-50 inset-0 flex flex-col items-center justify-center">
           <h1 className="font-bold shadow-md bg-blue-800 text-center uppercase mt-56 text-white text-5xl">
-            Pourquoi devenir un PARTENAIRE avec <br /> 2 peerfect?
+            Pourquoi devenir un PARTENAIRE avec 
+          </h1>
+          <h1 className="font-bold shadow-md bg-blue-800 text-center uppercase  text-white text-5xl">
+            2 peerfect?
           </h1>
         </div>
        
