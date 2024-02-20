@@ -9,6 +9,7 @@ const Form = () => {
       </div>
       <div className="bg-Apropo p-16 m-12 rounded-xl">
         <form className="space-y-4">
+          
           <div className="flex flex-row space-x-32 ">
             <label className="block">Vous êtes ?</label>
             <select className="w-96 p-2 rounded">
