@@ -4,63 +4,87 @@ import BackProf from "./section1";
 const Form = () => {
   return (
     <div>
-      <div>
-  <BackProf></BackProf>
+      <div className="mb-36">
+        <BackProf></BackProf>
       </div>
-      <div className="bg-gradient-to-b from-purple-400 to-white p-10">
+      <div className="bg-Apropo p-16 m-12 rounded-xl">
         <form className="space-y-4">
-          <div>
+          <div className="flex flex-row space-x-32 ">
             <label className="block">Vous êtes ?</label>
-            <select className="w-full p-2 rounded">
+            <select className="w-96 p-2 rounded">
               <option>Étudiant</option>
               <option>Formateur</option>
             </select>
           </div>
-          <input className="w-full p-2 rounded" type="text" placeholder="Nom" />
-          <input
-            className="w-full p-2 rounded"
-            type="text"
-            placeholder="Prénom"
-          />
-          <input
-            className="w-full p-2 rounded"
-            type="text"
-            placeholder="Pays"
-          />
-          <input
-            className="w-full p-2 rounded"
-            type="text"
-            placeholder="Ville"
-          />
-          <input
-            className="w-full p-2 rounded"
-            type="text"
-            placeholder="Numéro de téléphone"
-          />
-          <input
-            className="w-full p-2 rounded"
-            type="text"
-            placeholder="Email"
-          />
-          <div>
+          <div className="flex flex-row space-x-32">
+            <label className="block">Nom</label>
+            <input
+              className="w-96 p-2 rounded"
+              type="text"
+              placeholder="Nom"
+            />
+          </div>
+          <div className="flex flex-row space-x-32">
+            <label className="block">Prénom</label>
+            <input
+              className="w-96 p-2 rounded"
+              type="text"
+              placeholder="Prénom"
+            />
+          </div>
+          <div className="flex flex-row space-x-32">
+            <label className="block">Pays</label>
+            <input
+              className="w-96 p-2 rounded"
+              type="text"
+              placeholder="Pays"
+            />
+          </div>
+          <div className="flex flex-row space-x-32">
+            <label className="block">Ville</label>
+            <input
+              className="w-96 p-2 rounded"
+              type="text"
+              placeholder="Ville"
+            />
+          </div>
+          <div className="flex flex-row space-x-32">
+            <label className="block">Numéro de téléphone</label>
+            <input
+              className="w-96 p-2 rounded"
+              type="text"
+              placeholder="Numéro de téléphone"
+            />
+          </div>
+          <div className="flex flex-row space-x-32">
+            <label className="block">Email</label>
+            {" "}
+            <input
+              className="w-96 p-2 rounded"
+              type="text"
+              placeholder="Email"
+            />
+          </div>
+
+          <div className="flex flex-row space-x-32">
             <label className="block">Vous préférez faire ?</label>
-            <select className="w-full p-2 rounded">
+            <select className="w-96 p-2 rounded">
               <option>En ligne</option>
               <option>Présentiel</option>
             </select>
           </div>
-          <div>
+          <div className="flex flex-row space-x-32">
             <label className="block">Années d’expérience</label>
-            <select className="w-full p-2 rounded">
+            <select className="w-96 p-2 rounded">
               <option>Plus de 5 ans</option>
               {/* Add more options as needed */}
             </select>
           </div>
-          <div>
+          <div className="flex flex-row space-x-32">
             <label className="block">Ajouter votre CV</label>
-            <input type="file" />
+            <input type="file" className="w-96"/>
           </div>
-          <button className="w-full p-2 rounded bg-blue-500 text-white">
+          <button className="w-96 p-2 rounded bg-blue-500 text-white">
             Next
           </button>
         </form>
