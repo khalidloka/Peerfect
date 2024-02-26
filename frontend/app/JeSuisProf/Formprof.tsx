@@ -1,6 +1,7 @@
 import React from "react";
 
 function Formprof() {
+  
   return (
     <div >
          
@@ -27,6 +28,7 @@ function Formprof() {
                   name="preference"
                   value="Professeur"
                   className="mr-2"
+               
                 />
                 <label htmlFor="Professeur">Professeur</label>
               </div>
@@ -37,6 +39,7 @@ function Formprof() {
                   name="preference"
                   value="Fonctionnaire"
                   className="mr-2"
+                 
                 />
                 <label htmlFor="Fonctionnaire">Fonctionnaire</label>
               </div>
@@ -119,7 +122,7 @@ function Formprof() {
                 {/* Add more options as needed */}
               </select>
             </div>
-            <div className="">
+            <div className="w-96 p-2 rounded bg-white">
               <input id="cv" type="file" className="w-96" />
             </div>
             <button className="w-96 p-2 rounded bg-blue-500 text-white">

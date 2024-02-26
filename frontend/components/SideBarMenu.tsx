@@ -40,7 +40,7 @@ export default function SideBarMeanu() {
                 <div className="w-[223px] h-[31px] text-blue-800 text-xl font-semibold  ">Nos évènements</div>
             </div>
             <div className="w-[262px] h-[11px] justify-start items-center inline-flex">
-                <div className="w-[223px] h-[31px] text-blue-800 text-xl font-semibold  ">2Peerfect E-learning</div>
+                <div className="w-[223px] h-[31px] text-blue-800 text-xl font-semibold  "><Link href='/E-learning'>2Peerfect E-learning</Link></div>
             </div>
             <div className="w-[262px] h-[11px] justify-start items-center inline-flex">
                 <div className="w-[223px] h-[31px] text-blue-800 text-xl font-semibold   ">2Peerfect Business</div>
